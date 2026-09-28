@@ -1,0 +1,17 @@
+{
+  "name": "claimscope",
+  "display_name": "ClaimScope",
+  "version": "1.0.0",
+  "description": "A modular academic-writing skill for aligning claims, evidence, scientific scope, paper narrative, and reviewer response.",
+  "entrypoint": "skill/claimscope/SKILL.md",
+  "modules": [
+    "skill/claimscope/references/press-release-principle.md",
+    "skill/claimscope/references/scientific-boundaries.md",
+    "skill/claimscope/references/doctoral-thesis-style.md",
+    "skill/claimscope/references/reviewer-response.md",
+    "skill/claimscope/references/rewrite-examples.md"
+  ],
+  "repository": "https://github.com/huangjn58/ClaimScope",
+  "license": "MIT",
+  "keywords": ["academic-writing", "research-writing", "thesis", "paper-revision", "reviewer-response", "claim-evidence", "scientific-scope", "anti-defensive-writing", "codex-skill"]
+}

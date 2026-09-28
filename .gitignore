@@ -1,0 +1,15 @@
+.DS_Store
+Thumbs.db
+Desktop.ini
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+.env
+.env.*
+*.log
+.qa/
+skill-backups/
+.claimscope-stage-*/
+.claimscope-stage.*/
+.claimscope-install.lock/

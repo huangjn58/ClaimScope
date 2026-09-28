@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img" aria-labelledby="title desc">
+  <title id="title">ClaimScope module map</title>
+  <desc id="desc">Five on-demand modules cover contribution narrative, scientific scope, thesis-section logic, reviewer replies and concrete rewrites.</desc>
+  <rect width="1100" height="850" fill="#151918"/>
+  <g font-family="Arial, Helvetica, sans-serif" letter-spacing="0">
+    <text x="70" y="72" font-size="34" font-weight="700" fill="#ffffff">Five modules. One coherent argument.</text>
+    <text x="70" y="109" font-size="20" fill="#c0cdc6">Read only what the current writing decision needs.</text>
+    <g stroke="#3e4843" stroke-width="1">
+      <path d="M70 145H1030M70 269H1030M70 393H1030M70 517H1030M70 641H1030M70 765H1030"/>
+    </g>
+    <g fill="#8ae4b7" font-size="38" font-weight="700">
+      <text x="70" y="217">01</text><text x="70" y="341">02</text>
+      <text x="70" y="465">03</text><text x="70" y="589">04</text><text x="70" y="713">05</text>
+    </g>
+    <g fill="#ffffff" font-size="28" font-weight="700">
+      <text x="160" y="198">Press-Release Principle</text>
+      <text x="160" y="322">Scientific Boundaries</text>
+      <text x="160" y="446">Doctoral Thesis Style</text>
+      <text x="160" y="570">Reviewer Response</text>
+      <text x="160" y="694">Rewrite Examples</text>
+    </g>
+    <g fill="#c0cdc6" font-size="21">
+      <text x="160" y="235">Put the strongest supported contribution at the center.</text>
+      <text x="160" y="359">Match claim strength to what the evidence can establish.</text>
+      <text x="160" y="483">Give every section a clear scientific responsibility.</text>
+      <text x="160" y="607">Answer the concern without inventing research commitments.</text>
+      <text x="160" y="731">See the diagnosis, revision and reasoning side by side.</text>
+    </g>
+    <text x="70" y="810" font-size="19" fill="#e18c9b">Modules, not Git branches. Shared integrity, distinct responsibilities.</text>
+  </g>
+</svg>

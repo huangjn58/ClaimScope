@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="840" viewBox="0 0 1100 840" role="img" aria-labelledby="title desc">
+  <title id="title">ClaimScope architecture</title>
+  <desc id="desc">Scientific integrity governs claim-evidence alignment, contribution narrative and scientific boundaries, section logic and reviewer response, leading to evidence-based revision.</desc>
+  <rect width="1100" height="840" fill="#ffffff"/>
+  <g font-family="Arial, Helvetica, sans-serif" letter-spacing="0" text-anchor="middle">
+    <text x="550" y="60" font-size="30" font-weight="700" fill="#17231d">An argument with a defined scope.</text>
+    <text x="550" y="95" font-size="18" fill="#53665b">ClaimScope / system architecture</text>
+    <rect x="270" y="130" width="560" height="80" rx="6" fill="#17231d"/>
+    <text x="550" y="179" font-size="25" font-weight="700" fill="#ffffff">SCIENTIFIC INTEGRITY</text>
+    <rect x="270" y="255" width="560" height="80" rx="6" fill="#e5f6ec" stroke="#167d63" stroke-width="2"/>
+    <text x="550" y="304" font-size="25" font-weight="700" fill="#165b47">CLAIM–EVIDENCE ALIGNMENT</text>
+    <rect x="90" y="407" width="420" height="105" rx="6" fill="#f1f6f3" stroke="#8aa99a"/>
+    <text x="300" y="449" font-size="24" font-weight="700" fill="#17231d">PRESS-RELEASE PRINCIPLE</text>
+    <text x="300" y="481" font-size="19" fill="#53665b">What deserves the spotlight?</text>
+    <rect x="590" y="407" width="420" height="105" rx="6" fill="#fbeef1" stroke="#bd7485"/>
+    <text x="800" y="449" font-size="24" font-weight="700" fill="#713747">SCIENTIFIC BOUNDARIES</text>
+    <text x="800" y="481" font-size="19" fill="#713747">How far does the evidence reach?</text>
+    <rect x="230" y="582" width="640" height="80" rx="6" fill="#f1f6f3" stroke="#8aa99a"/>
+    <text x="550" y="632" font-size="24" font-weight="700" fill="#17231d">THESIS STYLE + REVIEWER RESPONSE</text>
+    <rect x="230" y="708" width="640" height="80" rx="6" fill="#167d63"/>
+    <text x="550" y="758" font-size="24" font-weight="700" fill="#ffffff">EVIDENCE-BASED ACADEMIC REVISION</text>
+  </g>
+  <g fill="none" stroke="#53665b" stroke-width="2">
+    <path d="M550 210V245M543 237L550 245L557 237M550 335V366H300V397M293 389L300 397L307 389M550 366H800V397M793 389L800 397L807 389"/>
+    <path d="M300 512V547H800V512M550 547V572M543 564L550 572L557 564M550 662V698M543 690L550 698L557 690"/>
+  </g>
+</svg>

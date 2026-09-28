@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="840" viewBox="0 0 1600 840" role="img" aria-labelledby="title desc">
+  <title id="title">ClaimScope</title>
+  <desc id="desc">Strong claims. Exact boundaries. Evidence first. Claim, evidence, scope and narrative form an aligned academic argument.</desc>
+  <rect width="1600" height="840" fill="#151918"/>
+  <path d="M96 88H1504" stroke="#3e4843" stroke-width="2"/>
+  <rect x="96" y="48" width="16" height="16" fill="#8ae4b7"/>
+  <g font-family="Arial, Helvetica, sans-serif" letter-spacing="0">
+    <text x="130" y="63" fill="#c0cdc6" font-size="19">RESEARCH WRITING / PRECISE BY DESIGN</text>
+    <text x="1504" y="63" fill="#c0cdc6" font-size="19" text-anchor="end">V1.0.0</text>
+    <text x="90" y="218" fill="#ffffff" font-size="116" font-weight="700">ClaimScope</text>
+    <text x="96" y="315" fill="#ffffff" font-size="59" font-weight="700">Strong claims.</text>
+    <text x="96" y="386" fill="#8ae4b7" font-size="59" font-weight="700">Exact boundaries.</text>
+    <text x="96" y="457" fill="#ffffff" font-size="59" font-weight="700">Evidence first.</text>
+    <text x="98" y="517" fill="#c0cdc6" font-size="26">Write the strongest claim your evidence can actually support.</text>
+    <text x="1200" y="325" fill="#8ae4b7" font-size="84" font-weight="700" text-anchor="middle">C</text>
+    <text x="1200" y="364" fill="#c0cdc6" font-size="21" text-anchor="middle">WITHIN EVIDENCE</text>
+    <path d="M1085 257H1048V402H1085M1315 257H1352V402H1315" stroke="#8ae4b7" stroke-width="5" fill="none"/>
+    <path d="M1110 414H1290" stroke="#e18c9b" stroke-width="5"/>
+    <text x="1200" y="451" fill="#e18c9b" font-size="19" text-anchor="middle">DEFINED SCOPE</text>
+  </g>
+  <path d="M96 572H1504" stroke="#3e4843" stroke-width="2"/>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" fill="#ffffff" letter-spacing="0">
+    <rect x="96" y="609" width="286" height="80" rx="6" fill="#243a30" stroke="#8ae4b7"/>
+    <rect x="438" y="609" width="324" height="80" rx="6" fill="#8ae4b7"/>
+    <rect x="818" y="609" width="286" height="80" rx="6" fill="#38272d" stroke="#e18c9b"/>
+    <rect x="1160" y="609" width="344" height="80" rx="6" fill="#242b27" stroke="#76887d"/>
+    <text x="239" y="660" text-anchor="middle">CLAIM</text>
+    <text x="600" y="660" text-anchor="middle" fill="#151918">EVIDENCE</text>
+    <text x="961" y="660" text-anchor="middle">SCOPE</text>
+    <text x="1332" y="660" text-anchor="middle">NARRATIVE</text>
+    <path d="M432 649H391M401 640L391 649L401 658M770 649H809M799 640L809 649L799 658M1112 649H1151M1141 640L1151 649L1141 658" fill="none" stroke="#c0cdc6" stroke-width="2"/>
+  </g>
+  <text x="96" y="775" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#c0cdc6">Thesis · Papers · Revision · Reviewer Response</text>
+  <text x="1504" y="775" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#8ae4b7">CLAIM / EVIDENCE / SCOPE</text>
+</svg>
