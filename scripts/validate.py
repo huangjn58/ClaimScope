@@ -3,6 +3,7 @@
 import json
 import re
 import sys
+from datetime import date
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 import xml.etree.ElementTree as ET
@@ -21,6 +22,7 @@ MODULES = [
 REQUIRED = [
     "README.md", "README.zh-CN.md", "LICENSE", "CHANGELOG.md", "CONTRIBUTING.md",
     ".gitignore", ".gitattributes", "install.ps1", "install.sh", "skill.json",
+    "CITATION.cff", ".github/workflows/validate.yml",
     "skill/claimscope/SKILL.md", "skill/claimscope/LICENSE",
     "prompts/quick-prompt.md", "prompts/quick-prompt-zh.md",
     "docs/github-metadata.md", "docs/branch-strategy.md", "docs/release-v1.0.0.md",
@@ -47,7 +49,7 @@ def main():
         relative = path.relative_to(ROOT)
         if any(part in {".git", ".qa", "__pycache__"} for part in relative.parts):
             continue
-        if path.is_file() and (path.suffix in {".md", ".svg", ".json", ".sh", ".ps1", ".py"}
+        if path.is_file() and (path.suffix in {".md", ".svg", ".json", ".sh", ".ps1", ".py", ".cff", ".yml"}
                                or path.name in {"LICENSE", ".gitignore", ".gitattributes"}):
             text = path.read_text(encoding="utf-8")
             require(text.strip(), f"Empty text: {relative}")
@@ -72,6 +74,26 @@ def main():
     for name in [metadata["entrypoint"], *metadata["modules"]]:
         require((ROOT / name).is_file(), f"Broken metadata path: {name}")
     require(len(metadata["modules"]) == 5, "Expected five modules")
+    citation = yaml.safe_load(texts[ROOT / "CITATION.cff"])
+    require(citation.get("cff-version") == "1.2.0", "Incorrect CFF version")
+    require(citation.get("version") == metadata["version"], "Citation version differs")
+    require(citation.get("type") == "software" and citation.get("license") == "MIT",
+            "Citation type or license differs")
+    for key in ["title", "message"]:
+        require(isinstance(citation.get(key), str) and citation[key].strip(), f"Missing citation {key}")
+    for key in ["repository-code", "url"]:
+        require(citation.get(key) == metadata["repository"], f"Citation {key} differs")
+    require(citation.get("authors") == [{"alias": "huangjn58"}], "Unexpected citation identity")
+    date.fromisoformat(str(citation["date-released"]))
+    # BaseLoader avoids YAML 1.1 interpreting GitHub's 'on' key as a boolean.
+    workflow = yaml.load(texts[ROOT / ".github/workflows/validate.yml"], Loader=yaml.BaseLoader)
+    require(workflow["name"] == "ClaimScope Validation", "Unexpected workflow name")
+    require(set(workflow["on"]["push"]["branches"]) == {"main", "dev"}
+            and "pull_request" in workflow["on"], "Missing workflow triggers")
+    require(workflow["permissions"] == {"contents": "read"}, "Unexpected CI permissions")
+    steps = workflow["jobs"]["validate"]["steps"]
+    require(any(step.get("run") == "python scripts/validate.py" for step in steps),
+            "Workflow does not run package validation")
     require((ROOT / "LICENSE").read_bytes() == (SKILL / "LICENSE").read_bytes(), "License copy differs")
     if metadata["repository"] is None:
         print("NOTE: repository URL awaits maintainer-created remote; no URL was invented.")
@@ -84,7 +106,9 @@ def main():
             continue
         require(sum(line.startswith("```") for line in text.splitlines()) % 2 == 0,
                 f"Unclosed code fence: {path.relative_to(ROOT)}")
-        for target in re.findall(r"\]\(([^)\s]+)\)", text):
+        targets = re.findall(r"\]\(([^)\s]+)\)", text)
+        targets += re.findall(r'(?:src|href)=[\"\']([^\"\']+)[\"\']', text)
+        for target in targets:
             parsed = urlsplit(target)
             if parsed.scheme or target.startswith("#"):
                 continue

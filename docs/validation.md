@@ -60,7 +60,26 @@ This is a semantic review, **not** an independently measured invocation success 
 Automatic selection can overlap other writing skills; use `$claimscope` when selection
 must be explicit. Verify the scanned user directory for the installed Codex version.
 
-## Recheck
+## v1.0.0 release closeout
+
+- A fresh clone from the public GitHub remote was tested, rather than installing
+  from the development tree. The cloned PowerShell installer ran twice with an
+  isolated `CODEX_HOME`; all seven installed files and the retained backup matched
+  the cloned package by SHA-256. No actual global skill was replaced.
+- Git Bash accepted the cloned `install.sh` with `bash -n`.
+- The package validator now checks citation fields and workflow triggers as well
+  as the existing package checks. CI runs the same validator on `main`, future
+  `dev` pushes and pull requests, with read-only repository permissions.
+- `CITATION.cff` passed the official CFF 1.2.0 JSON Schema with format checking.
+  Its author is the public alias `huangjn58`, not an inferred legal name.
+  The offline package validator checks required citation fields and consistency;
+  it does not claim to implement the complete CFF schema.
+- The GitHub README cover was visually inspected in Edge. Existing SVG embeddings
+  were retained. The social preview is 1280 by 640 pixels and 153132 bytes.
+- Examples and prompts were reread: they use fictional premises and `$claimscope`,
+  with no private manuscript, unpublished dataset or confidential reviewer text found.
+
+## Recheck commands
 
 ```bash
 python -m pip install PyYAML

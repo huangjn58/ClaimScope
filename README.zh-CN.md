@@ -11,6 +11,7 @@ ClaimScope 是一个面向科研写作的模块化 Skill，用于协调科学主
 ![Codex Skill](https://img.shields.io/badge/Codex-Skill-167D63)
 ![Academic Writing](https://img.shields.io/badge/Academic-Writing-374151)
 [![MIT License](https://img.shields.io/badge/License-MIT-A64059)](LICENSE)
+[![Validation](https://github.com/huangjn58/ClaimScope/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/huangjn58/ClaimScope/actions/workflows/validate.yml)
 
 **让科学主张、证据与研究边界精确匹配。**
 
@@ -102,6 +103,8 @@ ClaimScope/
 ├── README.md
 ├── README.zh-CN.md
 ├── LICENSE
+├── CITATION.cff
+├── .github/workflows/validate.yml
 ├── CHANGELOG.md
 ├── CONTRIBUTING.md
 ├── .gitignore
@@ -246,12 +249,14 @@ Use $claimscope to revise this discussion section.
 
 ## 分支、版本与验证
 
-`main` 保存稳定发布内容，`dev` 用于开发。五个写作组件是 **modules，不是 Git branches**。
+首发使用 `main` 与附注标签 `v1.0.0`，无需创建 `dev`。五个写作组件是 **modules，不是 Git branches**。
 详见[分支策略](docs/branch-strategy.md)。首发版本包为 **v1.0.0**，已提供[发布说明](docs/release-v1.0.0.md)和[更新记录](CHANGELOG.md)；不表示远程 Release 已发布。
 
 使用 Python 3.9+ 与 PyYAML 运行 `python scripts/validate.py`。测试环境和边界见[验证记录](docs/validation.md)。静态检查不能替代模型实际行为评测。
 
 ## 致谢与许可证
+
+引用元数据见 [CITATION.cff](CITATION.cff)。
 
 感谢 [Adkid-Zephyr](https://github.com/Adkid-Zephyr/anti-defensive-writing-Skill) 的发布会原则，以及
 [Kiterlin](https://github.com/Kiterlin/anti-defensive-writing) 对冗余防御与必要科学边界的区分。

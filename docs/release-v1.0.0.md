@@ -1,7 +1,7 @@
 # ClaimScope v1.0.0 — Strong claims. Exact boundaries. Evidence first.
 
-Release notes prepared for the first public release. Publishing the GitHub release
-and creating its tag are separate maintainer actions.
+First public release. These notes accompany the reviewed `v1.0.0` tag;
+publishing the GitHub Release is a separate maintainer action.
 
 ClaimScope is a modular academic-writing skill for claim–evidence–scope alignment.
 It helps researchers decide what their evidence permits them to claim, how to organize
@@ -19,6 +19,8 @@ that claim, and where necessary scientific boundaries belong.
 - Seven fictional examples, including negative results and necessary uncertainty.
 - Four editable SVG visuals and a social-preview PNG.
 - Backup-first PowerShell and Bash installation with an isolated-test option.
+- GitHub Actions validation for package structure, references, links and SVGs.
+- CFF 1.2.0 citation metadata and bilingual validation badges.
 
 ## Install
 

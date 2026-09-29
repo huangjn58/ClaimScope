@@ -1,6 +1,6 @@
 # Changelog
 
-## v1.0.0
+## v1.0.0 - 2026-09-29
 
 Initial release package; publication is performed by the maintainer.
 
@@ -12,3 +12,5 @@ Initial release package; publication is performed by the maintainer.
 - Added four self-contained SVG visuals and a social-preview PNG.
 - Added backup-first Windows PowerShell and macOS/Linux Bash installers.
 - Preserved MIT attribution in the repository and installable skill package.
+- Added GitHub Actions package validation and bilingual validation badges.
+- Added CFF 1.2.0 citation metadata using the maintainer's public alias.

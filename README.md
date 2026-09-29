@@ -12,6 +12,7 @@ paper narrative, and reviewer response.
 ![Codex Skill](https://img.shields.io/badge/Codex-Skill-167D63)
 ![Academic Writing](https://img.shields.io/badge/Academic-Writing-374151)
 [![MIT License](https://img.shields.io/badge/License-MIT-A64059)](LICENSE)
+[![Validation](https://github.com/huangjn58/ClaimScope/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/huangjn58/ClaimScope/actions/workflows/validate.yml)
 
 **Write the strongest claim your evidence can actually support.**
 
@@ -114,6 +115,8 @@ ClaimScope/
 ├── README.md
 ├── README.zh-CN.md
 ├── LICENSE
+├── CITATION.cff
+├── .github/workflows/validate.yml
 ├── CHANGELOG.md
 ├── CONTRIBUTING.md
 ├── .gitignore
@@ -270,7 +273,7 @@ They contain no private manuscripts or actual research data.
 
 ## Branches and release
 
-`main` is for stable releases; `dev` is for active development. The five components
+The first release uses `main` and the annotated `v1.0.0` tag; no `dev` branch is required. The five components
 above are **modules, not Git branches**. See the [branch strategy](docs/branch-strategy.md).
 The first release package is **v1.0.0**; [release notes](docs/release-v1.0.0.md) and
 [changelog](CHANGELOG.md) are prepared. A version label here does not claim a remote
@@ -283,6 +286,8 @@ Run `python scripts/validate.py` with Python 3.9+ and PyYAML. See the
 Static package checks are not a guarantee of model behavior or automatic invocation.
 
 ## Acknowledgements and license
+
+Citation metadata is provided in [CITATION.cff](CITATION.cff).
 
 Inspired by [Adkid-Zephyr's Press-Release Principle](https://github.com/Adkid-Zephyr/anti-defensive-writing-Skill)
 and [Kiterlin's scientific-boundary distinctions](https://github.com/Kiterlin/anti-defensive-writing).

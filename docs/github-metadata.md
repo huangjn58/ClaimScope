@@ -39,7 +39,7 @@ Public repository: [huangjn58/ClaimScope](https://github.com/huangjn58/ClaimScop
 1. Review the MIT copyright designation and choose a public maintainer identity if desired.
 2. Confirm the repository destination is `huangjn58/ClaimScope`.
 3. Run `python scripts/validate.py` before publishing changes.
-4. Make a local commit, add that remote, and push `main` and `dev` when ready.
+4. Commit reviewed changes and push `main`; the first release does not require `dev`.
 5. Set the description, topics and social-preview PNG in GitHub settings.
 6. Tag the reviewed release commit as `v1.0.0` and publish the prepared release notes.
 

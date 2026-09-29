@@ -7,7 +7,7 @@ additional academic-writing scenarios, documentation fixes and improved translat
 
 Open an issue describing the scientific-writing problem, the current behavior and the
 desired behavior. Use a fictional or explicitly authorized excerpt. For a pull request,
-branch from `dev` once that branch exists; use `main` for the initial bootstrap.
+create a focused feature branch from `main`.
 Explain which module changes and how the change preserves scientific boundaries.
 
 ## Evidence before style

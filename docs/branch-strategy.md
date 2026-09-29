@@ -3,11 +3,11 @@
 | Git branch | Responsibility |
 | --- | --- |
 | `main` | Reviewed, stable release content |
-| `dev` | Active development and integration |
 
-Use focused feature branches from `dev` for larger changes. Review evidence boundaries,
+Use focused feature branches from `main` for larger changes. Review evidence boundaries,
 examples, installer safety and both languages before merging a release into `main`.
-For the first commit, bootstrap `main`, then create `dev` from the same commit.
+The v1.0.0 release uses only `main` and its annotated tag. Introduce `dev` only if
+future parallel development actually requires it; CI supports it without creating it.
 
 Release tags identify reviewed snapshots: `v1.0.0`, `v1.1.0`, `v2.0.0`.
 Use patch releases for corrections, minor releases for compatible additions, and major
